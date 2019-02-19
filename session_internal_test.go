@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.comg/0987363/mgo/bson"
+	"github.com/0987363/mgo/bson"
 	. "gopkg.in/check.v1"
 )
 
@@ -19,7 +19,7 @@ var _ = Suite(&S{})
 
 // Ensures indexed int64 fields do not cause mgo to panic.
 //
-// See https://github.comg/0987363/mgo/pull/23
+// See https://github.com/0987363/mgo/pull/23
 func TestIndexedInt64FieldsBug(t *testing.T) {
 	input := bson.D{
 		{Name: "testkey", Value: int(1)},

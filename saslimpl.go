@@ -3,7 +3,7 @@
 package mgo
 
 import (
-	"github.comg/0987363/mgo/internal/sasl"
+	"github.com/0987363/mgo/internal/sasl"
 )
 
 func saslNew(cred Credential, host string) (saslStepper, error) {

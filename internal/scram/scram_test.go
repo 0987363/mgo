@@ -6,7 +6,7 @@ import (
 
 	"strings"
 
-	"github.comg/0987363/mgo/internal/scram"
+	"github.com/0987363/mgo/internal/scram"
 	. "gopkg.in/check.v1"
 )
 

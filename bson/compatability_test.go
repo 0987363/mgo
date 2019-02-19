@@ -1,7 +1,7 @@
 package bson_test
 
 import (
-	"github.comg/0987363/mgo/bson"
+	"github.com/0987363/mgo/bson"
 	. "gopkg.in/check.v1"
 )
 
