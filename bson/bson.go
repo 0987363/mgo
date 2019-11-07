@@ -294,8 +294,7 @@ func NewObjectIdWithTime(t time.Time) ObjectId {
 }
 
 func (id *ObjectId) Unmarshal(data []byte) error {
-	c := ObjectId(data)
-	*id = c
+	*id = ObjectId(data)
 	return nil
 }
 
