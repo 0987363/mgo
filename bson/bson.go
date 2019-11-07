@@ -293,6 +293,7 @@ func NewObjectIdWithTime(t time.Time) ObjectId {
 	return ObjectId(string(b[:]))
 }
 
+/*
 func (id *ObjectId) Unmarshal(data []byte) error {
 	c := ObjectId(data)
 	*id = c
@@ -306,6 +307,7 @@ func (id ObjectId) Marshal() ([]byte, error) {
 func (id ObjectId) Size() int {
 	return len([]byte(id))
 }
+*/
 
 // String returns a hex string representation of the id.
 // Example: ObjectIdHex("4d88e15b60f486e428412dc9").
