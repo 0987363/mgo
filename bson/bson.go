@@ -302,6 +302,10 @@ func (id ObjectId) Marshal() ([]byte, error) {
 	return []byte(id), nil
 }
 
+func (id ObjectId) MarshalTo(data []byte) (int, error) {
+	return copy(data, []byte(id)), nil
+}
+
 func (id ObjectId) Size() int {
 	return len([]byte(id))
 }
