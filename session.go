@@ -4174,9 +4174,9 @@ func (db *Database) run(socket *mongoSocket, cmd, result interface{}) (err error
 //     http://www.mongodb.org/display/DOCS/Database+References
 //
 type DBRef struct {
-	Collection string      `bson:"$ref"`
-	Id         interface{} `bson:"$id"`
-	Database   string      `bson:"$db,omitempty"`
+	Collection string      `bson:"$ref" json:"collection"`
+	Id         interface{} `bson:"$id" json:"id"`
+	Database   string      `bson:"$db,omitempty" json:"database"`
 }
 
 // NOTE: Order of fields for DBRef above does matter, per documentation.
